@@ -1,0 +1,95 @@
+<html>
+    <head>
+        <title>iEstimate</title>
+
+        <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;"/>
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+
+        <link rel="stylesheet" href="iestimate_ui/iui.css" type="text/css" />
+        <script type="text/javascript" src="iestimate_ui/iui.js">//</script>
+
+        <style type="text/css">
+
+            body {
+                font-family: Helvetica, Arial, sans-serif;
+                text-align: center;
+                background: #000;
+                color: #fff;
+            }
+
+
+            table {
+                border-collapse: collapse;;
+                width: 100%;
+            }
+
+            #number {
+                text-align: center;
+                font-size: 220px;
+                color: tomato;
+                padding-top:20%;
+            }
+
+            td {
+                text-align: center;
+                cursor: pointer;
+                border: 1px solid #333;
+                padding: 36px 20px;
+                font-size: 48px;
+            }
+
+        </style>
+        <script type="text/javascript" src="http://code.jquery.com/jquery-1.4.2.min.js">//</script>
+        <script type="text/javascript">
+
+            $(document).ready(function() {
+                $("#number").hide();
+                $("td").click(function() {
+                    var choice = $("#number");
+                    var value = ($(this).html());
+                    choice.html(value);
+                    choice.show();
+                    $("#selection").hide();
+                    return false;
+                });
+
+                $("#number").click(function() {
+                    $("#number").hide();
+                    $("#selection").show();
+                    return false;
+                });
+            });
+
+        </script>
+    </head>
+
+
+    <div class="toolbar">
+        <h1 id="pageTitle">iEstimate</h1>
+    </div>
+
+    <ul id="list" selected="true">
+
+        <table id="selection">
+            <tr>
+                <td>&#189;</td>
+                <td>1</td>
+                <td>1&#189;</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>2&#189;</td>
+                <td>3</td>
+            </tr>
+            <tr>
+                <td>3&#189;</td>
+                <td>4</td>
+                <td>?</td>
+            </tr>
+        </table>
+
+        <div id="number"><!-- --></div>
+
+    </ul>
+
+</html>
