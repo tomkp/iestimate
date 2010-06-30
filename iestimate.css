@@ -1,0 +1,107 @@
+
+body {
+    margin: 0;
+    font-family: Helvetica;
+    background: #FFFFFF;
+    color: #000000;
+    overflow-x: hidden;
+    -webkit-user-select: none;
+    -webkit-text-size-adjust: none;
+}
+
+body > *:not(.toolbar) {
+    display: none;
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    left: 0;
+    top: 45px;
+    width: 100%;
+    min-height: 372px;
+    -webkit-transition-duration: 300ms;
+    -webkit-transition-property: -webkit-transform;
+    -webkit-transform: translateX(0%);
+}
+
+body[orient="landscape"] > *:not(.toolbar) {
+    min-height: 268px;
+}
+
+body > *[selected="true"] {
+    display: block;
+}
+
+
+/************************************************************************************************/
+
+body > .toolbar {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    border-bottom: 1px solid #2d3642;
+    border-top: 1px solid #6d84a2;
+    padding: 10px;
+    height: 45px;
+    background: url(toolbar.png) #6d84a2 repeat-x;
+}
+
+.toolbar > h1 {
+    position: absolute;
+    overflow: hidden;
+    left: 50%;
+    margin: 1px 0 0 -75px;
+    height: 45px;
+    font-size: 20px;
+    width: 150px;
+    font-weight: bold;
+    text-shadow: rgba(0, 0, 0, 0.4) 0px -1px 0;
+    text-align: center;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    color: #FFFFFF;
+}
+
+body[orient="landscape"] > .toolbar > h1 {
+    margin-left: -125px;
+    width: 250px;
+}
+
+/************************************************************************************************/
+
+body > ul > li {
+    position: relative;
+    margin: 0;
+    border-bottom: 1px solid #E0E0E0;
+    padding: 8px 0 8px 10px;
+    font-size: 20px;
+    font-weight: bold;
+    list-style: none;
+}
+
+body {
+    font-family: Helvetica, Arial, sans-serif;
+    text-align: center;
+    background: #000;
+    color: #fff;
+}
+
+
+table {
+    border-collapse: collapse;;
+    width: 100%;
+}
+
+#number {
+    text-align: center;
+    font-size: 220px;
+    color: tomato;
+    padding-top:20%;
+}
+
+td {
+    text-align: center;
+    cursor: pointer;
+    border: 1px solid #333;
+    padding: 36px 20px;
+    font-size: 46px;
+}
