@@ -1,4 +1,4 @@
-![iEstimate](http://github.com/tomkp/iestimate/blob/master/logo.png)
+![iEstimate](http://github.com/tomkp/iestimate/raw/master/logo.png)
 
 iEstimate
 ---------
