@@ -1,4 +1,4 @@
-!(logo.png)
+!(http://github.com/tomkp/iestimate/blob/master/logo.png)
 
 iEstimate
 ---------
