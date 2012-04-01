@@ -5,4 +5,4 @@ iEstimate
 
 estimating tool for iphone
 
-[http://datastrobe.com/iestimate.html](http://datastrobe.com/iestimate.html)
+[http://tomkp.com/iestimate](http://tomkp.com/iestimate)
