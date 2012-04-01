@@ -1,0 +1,60 @@
+<html>
+    <head>
+        <title>iEstimate</title>
+
+        <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;"/>
+        <meta name="apple-mobile-web-app-capable" content="yes"/>
+
+        <link rel="stylesheet" href="iestimate.css" type="text/css"/>
+
+        <script type="text/javascript" src="jquery-1.7.1.min.js">//</script>
+        <script type="text/javascript">
+
+            $(document).ready(function() {
+                var $number = $("#number");
+                $number.hide();
+                $("td").click(function() {
+                    $number.html($(this).html()).show();
+                    $("#selection").hide();
+                    return false;
+                });
+                $number.click(function() {
+                    $number.hide();
+                    $("#selection").show();
+                    return false;
+                });
+            });
+
+        </script>
+    </head>
+
+
+    <div class="toolbar">
+        <h1 id="pageTitle">iEstimate</h1>
+    </div>
+
+    <ul id="list" selected="true">
+
+        <table id="selection">
+            <tr>
+                <td>1</td>
+                <td>2</td>
+                <td>3</td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>8</td>
+                <td>13</td>
+            </tr>
+            <tr>
+                <td>21</td>
+                <td>34</td>
+                <td>?</td>
+            </tr>
+        </table>
+
+        <div id="number"><!-- --></div>
+
+    </ul>
+
+</html>
